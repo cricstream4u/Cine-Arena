@@ -9,7 +9,9 @@
 
   {"name":"SonyLiv","url":"https://cinearena.live/sonyliv.html","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzj_BmvQP_HPO0wYii4Ljfg1s2VOwl1vbmw&s"}, 
 
-  {"name":"MOVIES","url":"https://cinearena.live/movies.html","logo":"https://upload.wikimedia.org/wikipedia/en/d/db/The_Movies_Coverart.jpg"},
+  {"name":"CINE MOVIES","url":"https://cinearena.live/movies.html","logo":"https://upload.wikimedia.org/wikipedia/en/d/db/The_Movies_Coverart.jpg"},
+
+   {"name":"All MOVIES","url":"https://cinearena.live/allmovies.html","logo":"https://thumbs.dreamstime.com/b/old-fashioned-movie-film-camera-logo-design-template-black-white-vector-illustration-video-production-logo-design-template-old-136115408.jpg"},
   
   {"name":"MUSIC Channels","url":"https://cinearena.live/music.html","logo":"https://img.freepik.com/premium-vector/colorful-musical-note-art-with-vibrant-splashes-musical-note-black-surrounded_53876-651215.jpg?semt=ais_hybrid&w=740&q=80"}
 ]
