@@ -53,18 +53,24 @@ a:hover, a:active {
             --transition-speed: 0.3s;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+            html, body {
+  height: 100%;
+}
 
-        body {
-            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
+body {
+  display: flex;
+  flex-direction: column;
+  background: #1f1f1f !important;
+  color: white;
+  margin: 0;
+  padding-top: 60px !important;
+}
+
+main {
+  flex: 1; /* ✅ pushes footer down */
+  display: block;
+}
+
 
         .container {align:center;
             max-width: 1600px;
@@ -214,6 +220,11 @@ a:hover, a:active {
                 font-size: 0.8rem;
             }
         } 
+         footer {
+            margin-top: auto;
+        }
+
+    
     </style>
   
 </head>
@@ -226,7 +237,7 @@ a:hover, a:active {
     </a>
   </header>
     
-      
+  <main>   
 <div class="tab-content">
   <div class="tab-pane">
 <div class="container">
@@ -244,7 +255,7 @@ a:hover, a:active {
 
 <script>function getData() {fetch("https://raw.githubusercontent.com/cricstream4u/Cine-Arena/main/cine.json") .then(res => {return res.json(); })  .then(json => {console.log(json.data);const html  = json  .map(function(item) { return  "<div class='directory-item'><a href='"+item.url+"'><img src='"+item.logo+"'></a><a href='"+item.url+"'><b>"+item.name+"</b></a></div>"; }) .join(""); console.log(html);document.querySelector("#app" ).insertAdjacentHTML("afterbegin", html); }) .catch(error => { console.log(error); });}getData();</script>
 
-
+</main> 
 <footer class="bg-blue-900 text-white text-center py-4 mt-8">
   <p>© 2025 Cine Arena • Live Sports & Entertainment</p>
   <p class="text-sm opacity-80">Join Telegram: <a href="https://t.me/cine_arena" class="text-cyan-300">Click Here</a></p>
